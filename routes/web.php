@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\PropertyTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,5 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/', [PropertyController::class, 'index'])->name('index');
+    Route::get('/type', [PropertyTypeController::class, 'index'])->name('type');
 });

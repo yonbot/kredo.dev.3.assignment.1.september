@@ -64,7 +64,7 @@
                                     </a>
 
                                     {{-- Property Type --}}
-                                    <a href="#" class="dropdown-item">
+                                    <a href="{{ route('type') }}" class="dropdown-item">
                                         <i class="fa-solid fa-circle-user"></i> Property Type
                                     </a>
 

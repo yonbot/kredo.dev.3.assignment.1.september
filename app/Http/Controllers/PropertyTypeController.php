@@ -12,7 +12,7 @@ class PropertyTypeController extends Controller
      */
     public function index()
     {
-        //
+        return view('property-types.index');
     }
 
     /**
