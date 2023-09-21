@@ -19,5 +19,8 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/', [PropertyController::class, 'index'])->name('index');
+    Route::get('/property/create', [PropertyController::class, 'create'])->name('property.create');
+    Route::post('/property/store', [PropertyController::class, 'store'])->name('property.store');
+
     Route::get('/type', [PropertyTypeController::class, 'index'])->name('type');
 });
